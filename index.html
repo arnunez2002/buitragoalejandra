@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cifrado Afín</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Cifrado Afín</h1>
+
+  <div class="container">
+    <div class="box">
+      <h2>Cifrar Mensaje</h2>
+      <textarea id="inputText" placeholder="Ingrese el mensaje a cifrar"></textarea>
+      <label for="a">a:</label>
+      <input type="number" id="a" min="1" max="26">
+      <label for="b">b:</label>
+      <input type="number" id="b" min="0" max="26">
+      <button id="encryptButton">Cifrar</button>
+      <h3>Texto Cifrado:</h3>
+      <p id="encryptedText"></p>
+    </div>
+
+    <div class="box">
+      <h2>Descifrar Mensaje</h2>
+      <textarea id="encryptedInput" placeholder="Ingrese el texto cifrado"></textarea>
+      <button id="decryptButton">Descifrar</button>
+      <h3>Textos Descifrados:</h3>
+      <div id="decryptedResults"></div>
+      <button id="readMoreButton" style="display: none;">Leer más</button>
+    </div>
+
+    <div class="analysis">
+      <div class="box">
+        <h2>Análisis de Frecuencia:</h2>
+        <div id="frequencyStats" class="chart-container"></div> 
+        <div class="chart-container"> 
+          <canvas id="frequencyChart" width="400" height="400"></canvas>
+        </div>
+        <p id="frequencyInfo">Pasa el mouse sobre la gráfica para más información.</p>
+      </div>
+</div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

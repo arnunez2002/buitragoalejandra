@@ -1,0 +1,42 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  background-image: url(imagenes/inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px 0; 
+    background-repeat: no-repeat;
+    /* background-position: 50% 50%; */
+    color: #ffffff;
+    font-family: fantasy;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  button,a {
+    background-color: #ffffff;
+    color: #090909;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }

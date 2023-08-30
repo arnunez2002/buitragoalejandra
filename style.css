@@ -1,0 +1,97 @@
+/* Resetear los márgenes y el padding por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globales para el cuerpo y el encabezado */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  background-image: url(imagenes/fondo7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  font-family: cursive;
+  color: #302e2e;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para las cajas */
+.box {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos específicos para el área de análisis */
+.analysis {
+  display: flex;
+  justify-content: center;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+/* Estilos para el área de lectura adicional */
+#readMoreButton {
+  margin-top: 10px;
+}
+
+/* Estilos específicos para el encabezado */
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  background-image:url(imagenes/cifrado1.jpg); 
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 40px;
+}
+
+/* Estilos para los resultados descifrados */
+#decryptedResults {
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Estilos para el enlace de lectura adicional */
+#readMoreButton {
+  display: block;
+  margin: 10px auto;
+}
